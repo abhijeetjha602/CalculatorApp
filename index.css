@@ -1,0 +1,82 @@
+:root{
+    --scale:1.0;
+    --spacing:2px;
+}
+div{padding: 0px;margin:0px;border:0px;}
+body{
+    background-color: #fbe9e7;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    margin:calc(2rem * var(--scale));
+    text-align: center;
+    font-size: calc(4rem * var(--scale));
+    font-family: fantasy;
+    color:#26201f;
+}
+#app{
+    width:calc((18rem + 12 * var(--spacing)) * var(--scale));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8b7b5;
+    padding-top:calc(3 * var(--spacing) * var(--scale));
+    padding-bottom:calc(2 * var(--spacing) * var(--scale));
+    border-radius:calc(2*var(--spacing)*var(--scale));
+}
+#display{
+    background-color: white;
+}
+#expression{
+    margin:calc(var(--spacing) * var(--scale));
+    width:calc((18rem + 4 * var(--spacing)) * var(--scale));
+    min-height:calc(4rem * var(--scale));
+    font-size: calc(3rem * var(--scale));
+    text-align: right;
+    word-wrap: break-word;
+}
+#result{
+    margin:calc(var(--spacing) * var(--scale));
+    width:calc((18rem + 4 * var(--spacing)) * var(--scale));
+    min-height:calc(3rem * var(--scale));
+    font-size: calc(2rem * var(--scale));
+    text-align: right;
+    word-wrap: break-word;
+}
+#keypad{
+    width:calc((18rem + 8 * var(--spacing)) * var(--scale));
+    margin-top: calc(var(--spacing) * var(--scale));
+    display:flex;
+    flex-wrap: wrap;
+}
+.keys{
+    width:calc(4.5rem * var(--scale));
+    height:calc(5rem * var(--scale));
+    margin:calc(var(--spacing) * var(--scale));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(2rem * var(--scale));
+    background-color: #f2eded;
+    color:#26201f;
+}
+#zero{
+    width:calc((9rem + 2*var(--spacing)) * var(--scale));
+}
+
+#footer{
+    margin: calc(2rem * var(--scale));
+    font-size: 1.2rem;
+    font-family:monospace;
+    font-weight: bolder;
+    color:#26201f;
+}
+#footer a{
+    color:#26201f;
+}
